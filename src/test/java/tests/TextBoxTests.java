@@ -17,7 +17,7 @@ public class TextBoxTests extends TestBase {
 
     @Test
     @DisplayName("Text box can be filled")
-    @Story("Fill and submit text box form")
+    @Story("Text box form operations")
     @Tag("automated")
     void fillFormTest() {
         step("Open page /text-box", () -> {
@@ -43,7 +43,7 @@ public class TextBoxTests extends TestBase {
 
     @Test
     @DisplayName("Text box can be cleared")
-    @Story("Clear text box form")
+    @Story("Text box form operations")
     @Tag("automated")
     void clearFormTest() {
         step("Open page /text-box", () -> {
@@ -68,7 +68,7 @@ public class TextBoxTests extends TestBase {
 
     @Test
     @DisplayName("Error message is displayed on incomplete form submission")
-    @Story("Submit incomplete text box form and verify error message")
+    @Story("Text box form operations")
     @Tag("automated")
     void incompleteFormSubmissionTest() {
         step("Open page /text-box", () -> {
@@ -87,7 +87,7 @@ public class TextBoxTests extends TestBase {
 
     @Test
     @DisplayName("Text box can be filled (Manual)")
-    @Story("Perform manual fill and submit of text box form")
+    @Story("Manual form operations")
     @Tag("manual")
     void fillFormManualTest() {
         step("Open page /text-box");
@@ -97,7 +97,7 @@ public class TextBoxTests extends TestBase {
 
     @Test
     @DisplayName("Form data can be edited (Manual)")
-    @Story("Perform manual edit of text box form data")
+    @Story("Manual form operations")
     @Tag("manual")
     void editFormDataManualTest() {
         step("Open page /text-box");
@@ -107,7 +107,7 @@ public class TextBoxTests extends TestBase {
 
     @Test
     @DisplayName("Form submission with invalid data (Manual)")
-    @Story("Perform manual submission of text box form with invalid data")
+    @Story("Manual form operations")
     @Tag("manual")
     void invalidFormSubmissionManualTest() {
         step("Open page /text-box");
